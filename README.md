@@ -22,6 +22,7 @@ To clone the repository:
 ```
 git clone https://github.com/nikita-kotsehub/funcX-edge-device-hierarchy.git
 ```
+To run your own funcx-endpoint, follow [this guide][2]. 
 
 ## Contributing
 1. Add more microcontroller boards
@@ -30,3 +31,4 @@ git clone https://github.com/nikita-kotsehub/funcX-edge-device-hierarchy.git
 
 
 [1]: https://funcx.org/ "funcX"
+[2]: https://funcx.readthedocs.io/en/latest/endpoints.html
