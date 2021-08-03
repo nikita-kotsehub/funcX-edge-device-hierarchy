@@ -23,7 +23,7 @@ The Human vs. Nonhuman Convolutional Neural Network classifies an image into hum
 
 # Temperature Prediction DNN
 
-The Temperature Prediction DNN in `temperature_prediction_DNN.ipynb` is a simple neural network with a single neuron written for demonstrative purposes of running AI at the edge. After training the model and converting it to `.tflite`, the weights and biases are exported as `w1_temp.txt` and 'b1_temp.txt`. We use them for temperature prediction on Arduino Nano RP2040 Connect.
+The Temperature Prediction DNN in `temperature_prediction_DNN.ipynb` is a simple neural network with a single neuron written for demonstrative purposes of running AI at the edge. After training the model and converting it to `.tflite`, the weights and biases are exported as `w1_temp.txt` and `b1_temp.txt`. We use them for temperature prediction on Arduino Nano RP2040 Connect.
 
 ## Dependencies
 * numpy
