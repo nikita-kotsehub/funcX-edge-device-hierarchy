@@ -20,7 +20,7 @@ The list of dependencies, installation guides, files, and references is grouped 
 ## Installation
 To clone the repository:
 ```
-git clone https://github.com/nikita-kotsehub/funcx_hierarchy_RPi4_ArduinoNanoRP2040Connect.git
+git clone https://github.com/nikita-kotsehub/funcX-edge-device-hierarchy.git
 ```
 
 ## Contributing
