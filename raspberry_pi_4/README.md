@@ -35,5 +35,5 @@ Both functions are identical, besides the different inference processes. The mai
 [1]: https://coral.ai/products/accelerator/ 
 [2]: https://colab.research.google.com/github/google-coral/tutorials/blob/master/compile_for_edgetpu.ipynb#scrollTo=joxrIB0I3cdi
 [3]: https://funcx.org/
-[4]: https://mybinder.org/v2/gh/funcx-faas/examples/HEAD?filepath=notebooks%2FIntroduction.ipynb 
-[5]: https://funcx.readthedocs.io/en/latest/quickstart.html
+[4]: https://funcx.readthedocs.io/en/latest/quickstart.html
+[5]: https://mybinder.org/v2/gh/funcx-faas/examples/HEAD?filepath=notebooks%2FIntroduction.ipynb 
