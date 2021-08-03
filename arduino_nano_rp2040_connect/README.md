@@ -1,12 +1,13 @@
 # Arduino Nano RP2040 Connect w/ OV2640 & Temperature/Motion sensors
 
-Nano RP2040 tracks temperature/motion and upon conditional sends an image to RPi 4. This folder describes everything relevant you need to know. 
+Nano RP2040 tracks temperature/motion and upon the conditional sends an image to RPi 4. This folder describes everything relevant you need to know. 
 
 ## Table of Contents
 
-   * [Human Binary Classification Suite](#human-binary-classification-suite)
+   * [Arduino Nano RP2040 Connect w/ OV2640 & Temperature/Motion sensors](#human-binary-classification-suite)
       * [Dependencies](#dependencies)
-      * [Hardware Wiring](#harware-wiring)
+      * [Hardware Wiring](#hardware-wiring)
+      * [Functions](#functions)
 
 ## Dependencies
 
@@ -59,9 +60,20 @@ If using the motion sensor, you can use the following wiring:
 
 <img src="https://diyusthad.com/wp-content/uploads/2020/10/PIR-Motion-Sensor-Pinout-LQ.jpg" alt="HC-SR501 Pinout" width=300/>
 
-## File Descriptions
+*Notes:*
+
+1. By default, Nano RP2040 will not output the 5V to power the motion sensor [[5]]. To get it to work, you need to solder the solder pads [[6]].
+2. The motion sensor might take up to 60 seconds to start, during which it will switch from True to False multiple times. If it still does not work, try turning the left knob all the way counterclockwise, and the right one clockwise.
+
+## Functions
+
+### Main Driver
+
+### Camera Functions
 
 [1]: https://circuitpython.org/libraries
 [2]: https://www.arducam.com/docs/pico/arducam-camera-module-for-raspberry-pi-pico/spi-camera-for-raspberry-pi-pico/
 [3]: https://github.com/ArduCAM/PICO_SPI_CAM/tree/master/Python
 [4]: https://circuitpython.org/board/arduino_nano_rp2040_connect/
+[5]: https://forum.arduino.cc/t/5v-pin-on-nano-rp2040-connect-not-working/866247
+[6]: https://support.arduino.cc/hc/en-us/articles/360014779679-Why-doesn-t-the-5V-pin-work-in-the-Arduino-Nano-33-BLE-boards-
