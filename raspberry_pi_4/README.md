@@ -29,7 +29,7 @@ Both functions are identical, besides the different inference processes. The mai
 - You need to provide your personal `endpoint_id`. It can be an AWS instance, a super-computer, or even your laptop. 
 - You can use the `hello_uuid` to test your code. It is a simple function that returns 'Hello World'. The 'human_uuid' function has files specific to my endpoint, so you will not be able to use it. You can also easily register your own function and use it.
 - Learn more about funcX [here][3]. Install it [[4]]. Practice it [[5]].
-
+- If have the Coral USB Accelerator, make sure to install its dependencies first by following [this guide][6].
 
 
 [1]: https://coral.ai/products/accelerator/ 
@@ -37,3 +37,4 @@ Both functions are identical, besides the different inference processes. The mai
 [3]: https://funcx.org/
 [4]: https://funcx.readthedocs.io/en/latest/quickstart.html
 [5]: https://mybinder.org/v2/gh/funcx-faas/examples/HEAD?filepath=notebooks%2FIntroduction.ipynb 
+[6]: https://coral.ai/docs/accelerator/get-started/#requirements
