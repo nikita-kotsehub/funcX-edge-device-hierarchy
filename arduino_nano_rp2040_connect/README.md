@@ -38,7 +38,7 @@ The original guide for connecting OV2640 to Raspberry Pi Pico from Arducam can b
 Use the following wiring: 
 
 | OV2640 SPI    |  Arduino Nano RP2040 Connect|
-| ------------- |:-------------:|
+| ------------- |:-------------|
 | CS            | D10 (or any other GPIO port, except A6, A7) |
 | MOSI          | D11 (COPI/MOSI)     |
 | MISO          | D12 (CIPO/MISO)     |
@@ -53,7 +53,7 @@ Use the following wiring:
 If using the motion sensor, you can use the following wiring:
 
 | HC-SR501    |  Arduino Nano RP2040 Connect|
-| ------------- |:-------------:|
+| ------------- |:-------------|
 | VCC           | 5V |
 | DOUT            | D9 (or any other GPIO port, except A6, A7)   |
 | GND            | GND |
