@@ -18,11 +18,16 @@ The list of dependencies, installation guides, files, and references is grouped 
 
 
 ## Installation
-To clone the repository:
+
+This is an overarching process. For details on each step, look at the corresponding folders.
+
+1. Clone the repository:
 ```
 git clone https://github.com/nikita-kotsehub/funcX-edge-device-hierarchy.git
 ```
-To run your own funcx-endpoint, follow [this guide][2]. 
+2. Set up your microcontroller.
+3. Set up Raspberry Pi 4.
+4. Set up your own funcx-endpoint, follow [this guide][2]. 
 
 ## Contributing
 1. Add more microcontroller boards
