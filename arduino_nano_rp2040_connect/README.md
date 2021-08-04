@@ -69,7 +69,17 @@ If using the motion sensor, you can use the following wiring:
 
 ### Main Driver
 
+- `image_temperature_sender.py` is the main function. It connects to a user-provided Wi-Fi access point (see `secrets.py`), loads the weights and biases, sets up the camera, and then continuously predicts the next temperature from the two previous measurements. If it exceeds a threshold, Nano RP2040 takes a picture and sends it as a byte array to a server hosted on a local network with the Raspberry Pi 4. 
+- `image_motion_sender.py` is similar to `image_temperature_sender.py`, only it triggers the camera when it detects any motion in the area. You can easily replace the conditional and the data you're sending to the server for your own use cases.
+- `secrets.py` should contain a dictionary with your network's `ssid` and `password`. Note that Nano RP2040 might not connect to a network with a network band above 2.4GHz. 
+- `w1_temp.txt` & `b1_temp.txt` are the weights and biases for the temperature prediction neural network.
+
 ### Camera Functions
+
+- `OV2640_reg.py` enables the OV2640 to take JPEG images of different sizes. 
+- `OV5642_reg.py` enables the OV5642 to take JPEG & RAW images of different sizes. Note: the project has not been tested for OV5642.
+- `Arducam.py` includes main functions for setting up the camera and taking the pictures. All of the functions here were developed by Arducam. I modified the `__init__` part of the ArducamClass to make it work with Arduino Nano RP2040 Connect. If you have a different microcontroller, you will likely need to change the pinout as well.
+- `snapshot.py` calls essential functions from `Arducam.py` to set up the camera and take an image. It abstracts users from the abundance of code in 'Arducam.py'.
 
 [1]: https://circuitpython.org/libraries
 [2]: https://www.arducam.com/docs/pico/arducam-camera-module-for-raspberry-pi-pico/spi-camera-for-raspberry-pi-pico/
