@@ -70,10 +70,14 @@ If using the motion sensor, you can use the following wiring:
 1. Download `CircuitPython 7.0.0 alpha-5 ` `.uf2` file from [here][4] and flush it onto your microcontroller.
 2. Copy files from `arduino_nano_rp2040_connect` onto your microcontroller
 3. Enter your network's `ssid` and `password` into `secrets.py`
-4. Change your server's address in the `image_sender.py`. Make sure your server is up and running.
-5. Check your microcontroller's pinout for `esp32` wifi connection in `image_sender.py`
-6. If using either the temperature or the motion use case, check your hardware wiring and run `image_temperature_sender.py` or `image_motion_sender.py`. If using a different microcontroller, also check pinout in the `Arducam.py`, `__init__` section. 
+4. Change your server's address in the `image_temperature_sender.py`/`image_motion_sender.py`. Make sure your server is up and running.
+5. If using either the temperature or the motion use case, check your hardware wiring. 
+6. If using a different microcontroller, check pinouts in 
+   - `Arducam.py`, `__init__` section
+   - `esp32` wifi connection in `image_temperature_sender.py`/`image_motion_sender.py`
 7. If using a different use case, change your conditional and the data you are sending. 
+8. Run `image_temperature_sender.py` or `image_motion_sender.py`.
+
 
 ## Functions
 
