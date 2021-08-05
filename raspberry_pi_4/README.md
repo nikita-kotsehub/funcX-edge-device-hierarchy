@@ -38,9 +38,9 @@ The ```image_receiver``` receives a bytearray image from Nano RP2040, converts i
 Both functions are identical, besides the different inference processes. The main function runs a Flask server. Upon receiving the bytearray image from the Nano RP2040, it converts the image to a proper Machine Learning input and runs inference with the pre-trained Tensorflow model. If it classifies the image as `human`, it requests a funcX tasks from the endpoint.
 
 - You need to provide your personal `endpoint_id`. It can be an AWS instance, a super-computer, or even your laptop. 
-- You can use the `hello_uuid` to test your code. It is a simple function that returns 'Hello World'. The 'human_uuid' function has files specific to my endpoint, so you will not be able to use it. You can also easily register your own function and use it.
+- You can use the `hello_uuid` to test your code. It is a simple function that returns 'Hello World'. The `human_uuid` function has files specific to my endpoint, so you will not be able to use it. You can also easily register your own function and use it.
 - Learn more about funcX [here][3]. Install it [[4]]. Practice it [[5]].
-- If have the Coral USB Accelerator, make sure to install its dependencies first by following [this guide][6].
+- If you have the Coral USB Accelerator, make sure to install its dependencies first by following [this guide][6].
 
 
 [1]: https://coral.ai/products/accelerator/ 
