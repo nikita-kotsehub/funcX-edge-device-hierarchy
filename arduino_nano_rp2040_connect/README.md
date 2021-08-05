@@ -36,7 +36,7 @@ The necessary libraries are in the `lib` folder, although you might want to down
 
 The original guide for connecting OV2640 to Raspberry Pi Pico from Arducam can be found [here][2]. The original codebase is [here][3]. I modified the codebase and adapted the pinout for Arduino Nano RP2040 Connect. 
 
-Use the following wiring: 
+Use the following wiring, referring to [Nano RP2040's pinout][7]: 
 
 | OV2640 SPI    |  Arduino Nano RP2040 Connect|
 | ------------- |:-------------|
@@ -101,3 +101,4 @@ If using the motion sensor, you can use the following wiring:
 [4]: https://circuitpython.org/board/arduino_nano_rp2040_connect/
 [5]: https://forum.arduino.cc/t/5v-pin-on-nano-rp2040-connect-not-working/866247
 [6]: https://support.arduino.cc/hc/en-us/articles/360014779679-Why-doesn-t-the-5V-pin-work-in-the-Arduino-Nano-33-BLE-boards-
+[7]: https://docs.arduino.cc/tutorials/nano-rp2040-connect/rp2040-01-technical-reference#pins 
