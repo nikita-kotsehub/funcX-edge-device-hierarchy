@@ -19,6 +19,7 @@ The list of dependencies, installation guides, files, and references is grouped 
 
    * [Edge Device Hierarchy with funcX](#hierarchy)
       * [Installation](#installation)
+      * [Poster](#poster)
 
 
 ## Installation
@@ -32,6 +33,8 @@ git clone https://github.com/nikita-kotsehub/funcX-edge-device-hierarchy.git
 2. Set up your microcontroller.
 3. Set up Raspberry Pi 4.
 4. Set up your own funcx-endpoint, follow [this guide][2]. 
+
+## Poster
 
 <img src="ACM_poster.jpg" alt="Poster highlighting main features of the project.">
 
