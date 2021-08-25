@@ -23,8 +23,8 @@ import io
 from snapshot import *
 
 # Request address. Make sure to replace with appropriate address
-ip_image_receiver = "http://192.168.1.108:8090/image_receiver"
-ip_test = "http://192.168.1.108:8090/test"
+ip_image_receiver = "http://xxx.xxx.xxx.xxx:8090/image_receiver"
+ip_test = "http://xxx.xxx.xxx.xxx:8090/test"
 
 # Get wifi details and more from a secrets.py file
 try:
