@@ -20,6 +20,7 @@ Nano RP2040 tracks temperature/motion and upon the conditional sends an image to
 * adafruit_bus_device
 * adafruit_esp32spi
 * adafruit_requests.mpy
+* adafruit_wsgi
 
 The necessary libraries are in the `lib` folder, although you might want to download the latest library bundle from [here][1].
 
@@ -85,6 +86,7 @@ If using the motion sensor, you can use the following wiring:
 
 - `image_temperature_sender.py` is the main function. It connects to a user-provided Wi-Fi access point (see `secrets.py`), loads the weights and biases, sets up the camera, and then continuously predicts the next temperature from the two previous measurements. If it exceeds a threshold, Nano RP2040 takes a picture and sends it as a byte array to a server hosted on a local network with the Raspberry Pi 4. 
 - `image_motion_sender.py` is similar to `image_temperature_sender.py`, only it triggers the camera when it detects any motion in the area. You can easily replace the conditional and the data you're sending to the server for your own use cases.
+- `wsgi_image_sender_temperature.py` is almost the same as the `image_temperature_sender.py`, only this function also hosts a WSGI server offering functionality to (1) send a picture and (2) change the temperature request.
 - `secrets.py` should contain a dictionary with your network's `ssid` and `password`. Note that Nano RP2040 might not connect to a network with a network band above 2.4GHz. 
 - `w1_temp.txt` & `b1_temp.txt` are the weights and biases for the temperature prediction neural network.
 
