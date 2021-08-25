@@ -12,7 +12,7 @@ from pycoral.utils import dataset
 from pycoral.adapters import common
 from pycoral.adapters import classify
 
-# Specify the TensorFlow model, labels, and image
+# Specify the TensorFlow model and labels
 script_dir = pathlib.Path(__file__).parent.absolute()
 model_file = os.path.join(script_dir, 'modelV5_edgetpu.tflite')
 label_file = os.path.join(script_dir, 'human_labels.txt')

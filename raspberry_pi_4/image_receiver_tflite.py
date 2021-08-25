@@ -9,7 +9,7 @@ from flask import Flask, request, jsonify
 
 import tensorflow as tf
 
-# Specify the TensorFlow model, labels, and image
+# Specify the TensorFlow model and labels
 script_dir = pathlib.Path(__file__).parent.absolute()
 model_file = os.path.join(script_dir, 'modelV5.tflite')
 #label_file = os.path.join(script_dir, 'human_labels.txt')
@@ -35,9 +35,11 @@ except:
     print("Couldn't start a funcX client")
 
 # define the functions and endpoint uuids
-hello_uuid = "8b9d784c-d661-44eb-9df0-0f3e1ef3e762"
-endpoint_id = "0e9c7503-3291-41bd-80b7-ae4f9dd91924"
-human_uuid = "849b13dc-fdcb-4e73-a927-315155d9960a"
+hello_uuid = "cb7c2dde-5626-4588-bf85-613b911ddaa8"
+endpoint_id = "5d7ff732-623a-4d5d-81d0-f65519f53ab0"
+
+# the face recognition function
+face_uuid = "d594bf23-5372-4ab4-89a4-362736970444"
 
 # define the image size for your neural network model
 image_x_size = 80
@@ -76,14 +78,17 @@ def image_receiver():
     # if it's a human, request a funcX task from the endpoint
     if classification == 1:
         print("sending the funcx task to the endpoint")
-        try:
-            res = fxc.run(img, endpoint_id=endpoint_id, function_id=human_uuid)
-            # depending on the task and endpoint, it might take a while
-            # to receive the results back. Modify the pause time below.
-            time.sleep(5)
-            print(f"Result: {fxc.get_result(res)}")
-        except Exception as e:
-            print("Exception: {}".format(e))
+        
+        res = fxc.run(byte_data, endpoint_id=endpoint_id, function_id=face_uuid)
+
+        while True:
+            try:
+                human_class_results = fxc.get_result(res)
+                print(f"Result: {human_class_results}")
+                break
+            except:
+                continue
+        return str(human_class_results)
         
     return string_response
 
@@ -93,4 +98,5 @@ def test():
     return "The server successfully received your GET request!"
 
 app.run(host='0.0.0.0', port=8090)
+
 
