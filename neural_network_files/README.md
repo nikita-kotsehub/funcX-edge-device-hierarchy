@@ -30,15 +30,19 @@ The Temperature Prediction DNN in `temperature_prediction_DNN.ipynb` is a simple
 * tensorflow
 * matplotlib
 
+# Facial Prediction CNN
+The 'facial_recognition.h5` model classifies the human as either Ben Affleck, Madonna, or the repository's author. You can change the training images so it learns to classify your face. Thanks to devDeejay for providing the [Medium article][6] and [code][7] for the model.
+
 ## Contributing
 - Improve the Human Classifier model's accuracy (although keep in mind the training time and the model weight).
 - Find a more efficient way to export weights from `.tflite` model in `temperature_prediction_DNN.ipynb`.
-
 
 [1]: https://github.com/agikarasugi/HumanBinaryClassificationSuite
 [2]: https://www.kaggle.com/sanikamal/horses-or-humans-dataset
 [3]: http://vision.stanford.edu/Datasets/40actions.html
 [4]: https://www.kaggle.com/robinreni/house-rooms-image-dataset
 [5]: https://colab.research.google.com/github/google-coral/tutorials/blob/master/compile_for_edgetpu.ipynb#scrollTo=joxrIB0I3cdi
+[6]:https://medium.com/softway-blog/building-a-facial-recognition-machine-learning-model-using-tensorflow-6e62fb349794
+[7]:https://gist.github.com/devDeejay/5f2cc735cb9cf1d2263273f646fed7ef
 
 
