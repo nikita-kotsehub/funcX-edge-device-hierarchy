@@ -33,7 +33,7 @@ git clone https://github.com/nikita-kotsehub/funcX-edge-device-hierarchy.git
 3. Set up Raspberry Pi 4.
 4. Set up your own funcx-endpoint, follow [this guide][2]. 
 
-<img src="AMC_poster.jpg" height="500" alt="Poster highlighting main features of the project.">
+<img src="AMC_poster.jpg" alt="Poster highlighting main features of the project.">
 
 [1]: https://funcx.org/ "funcX"
 [2]: https://funcx.readthedocs.io/en/latest/endpoints.html
