@@ -9,7 +9,7 @@ The repository contains two similar use cases:
 1. Nano RP2040 takes temperature measurements and constantly predicts the next temperature with a simple neural network. If the predicted temperature exceeds a threshold, Nano RP2040 takes a picture with a camera module OV2640 SPI and sends it to RPi 4. RPi 4 receives the image and runs a pre-trained convolutional neural network, classifying if the image has any humans. If it does, it requests a funcX task from an endpoint, such as a laptop or an AWS instance, asking it to do face recognition on the received image and return the results. 
 2. The second use case is identical, only instead of taking temperature measurements, Nano RP2040 uses a motion sensor HC-SR501 and sends the image if any movement is detected.
 
-Nano RP2040 also hosts an WSGI server, allowing it to receive requests from other machines. For example, you can request to change the temperature threshold.
+Nano RP2040 also hosts a WSGI server, allowing it to receive requests from other machines. For example, you can request to change the temperature threshold.
 
 The list of dependencies, installation guides, files, and references is grouped by the relevant folders. 
 
