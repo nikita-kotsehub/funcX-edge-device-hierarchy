@@ -2,7 +2,7 @@
 
 This project enables building Edge-Cloud edge device networks in Python. Read the associated paper [here][3].
 
-In this repository, you'll fine a hierarchy of devices offloading heavy tasks to computational machines up in the tree, using [funcX][1]. As of now, it has three devices: Arduino Nano RP2040 Connect, Raspberry Pi 4 Model B (RPi 4), and an AWS EC2 instance. 
+This repository implements a hierarchy of devices offloading heavy tasks to computational machines up in the tree, using [funcX][1]. As of now, it has three devices: Arduino Nano RP2040 Connect, Raspberry Pi 4 Model B (RPi 4), and an AWS EC2 instance. 
 
 The repository contains two similar use cases: 
 
